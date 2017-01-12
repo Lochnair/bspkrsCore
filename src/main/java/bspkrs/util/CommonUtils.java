@@ -533,7 +533,7 @@ public final class CommonUtils
     {
         switch (FMLCommonHandler.instance().getEffectiveSide()) {
             case CLIENT:
-                FMLClientHandler.instance().getClient().mcDataDir.getAbsolutePath();
+                return FMLClientHandler.instance().getClient().mcDataDir.getAbsolutePath();
             case SERVER:
                 return FMLServerHandler.instance().getServer().getDataDirectory().getAbsolutePath();
             default:
